@@ -25,6 +25,16 @@ Es importante cambiar los siguientes parámetros:
   * --name=[nuevo_nombre]
   * -p [nuevo_puerto]:80
   * -v [nueva_ruta]/config:/config - aquí siguiendo el ejemplo se pondría /home/DOKUWIKI
+===== INSTALACIÓN DESDE GIT =====
+El primer paso será clonar el GIT actual:
+
+<code bash>git clone https://github.com/usuarioregalonatural/DOKUWIKI.git </code>
+
+Si lo hacemos desde el raiz /home nos debe crear esta carpeta con el contenido del wiki:
+<code bash>/home/DOKUWIKI</code>
+
+Segundo paso ejecutar la parte de Docker como se indico en el apartado anterior.
+
 
 
 
