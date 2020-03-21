@@ -1,0 +1,77 @@
+div.dokuwiki table {
+  font-size: 100%;
+}
+
+/* inline tables */
+div.dokuwiki table.inline {
+  background-color: __background__;
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+
+div.dokuwiki table.inline th {
+  padding: 3px;
+  border: 1px solid __border__;
+  background-color: __background_alt__;
+}
+
+div.dokuwiki table.inline th input {
+        font-weight: bold;
+}
+
+div.dokuwiki table.inline td {
+  padding: 3px;
+  border: 1px solid __border__;
+}
+
+/**
+ * Edit button; keep this synced to css/plugin_data.css
+ **/
+
+div.dokuwiki div.editbutton_table form button:hover {
+    color: __mediumgray__;
+}
+
+div.dokuwiki div.editbutton_table form button,
+div.dokuwiki div.editbutton_table form button:hover {
+    border: 1px solid __border__;
+    background:transparent url(images/icons/stift_klein.png) no-repeat scroll right top;
+    border-top: none;
+    cursor:pointer;
+    display:inline;
+    font-size:10px;
+    margin:0;
+    padding: 0px 25px 2px 3px;
+    text-decoration:none;
+    vertical-align:middle;
+    -moz-border-radius: 0;
+    -opera-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -moz-border-radius-bottomleft: 0.5em;
+    -opera-border-bottom-left-radius: 0.5em;
+    -webkit-border-bottom-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    -moz-border-radius-bottomright:0.5em;
+    -opera-border-bottom-right-radius: 0.5em;
+    -webkit-border-bottom-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    margin-left: 2.1em;
+    text-indent: 0px;
+}
+
+div.dokuwiki div.editbutton_table {
+    margin-top: -1.2em; /* depends on the table margin (*1.2) */
+    margin-bottom: 1.2em;
+}
+
+*:first-child+html div.dokuwiki div.editbutton_table form button {
+    width: auto;
+    font-size: 10px;
+    line-height: 1.2em;
+}
+
+*:first-child+html div.dokuwiki div.editbutton_table form button:hover {
+    font-size: 10px;
+    line-height: 1.2em;
+}

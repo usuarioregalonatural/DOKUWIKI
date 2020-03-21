@@ -1,0 +1,5 @@
+  * Linux
+  * Dockers
+  * GIT
+  * Despliegues
+  * Analisis Pedidos

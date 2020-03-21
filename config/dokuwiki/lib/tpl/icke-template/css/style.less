@@ -1,0 +1,565 @@
+/* Layout Styles
+   Author: Florian Purchess
+   ----------------------------------------------------*/
+
+
+/* =BASE
+   ----------------------------------------------------*/
+
+body {
+    background: __bg_all__;
+    overflow-x: hidden;
+}
+
+a,a:hover {color: __text__;}
+a:hover {text-decoration: underline;}
+a {text-decoration: none;}
+
+/* =HEADER
+   ----------------------------------------------------*/
+
+#icke__header {
+    background: __bg_header__ url(images/layout/head_gradient.jpg) top left repeat-x;
+    height: 126px;
+    overflow: hidden;
+    padding: 0 1em;
+}
+
+#icke__header .logo {
+    border-right: 1px solid __logo_border__;
+    float: left;
+    height: 126px;
+    width: 100px;
+}
+
+#icke__header h5 {
+    color: __link__;
+    font-size: 28px;
+    font-weight: bold;
+    float: left;
+    left: 135px;
+    line-height: 1.3em;
+    position: absolute;
+    top: 30px;
+    padding-right: 200px;
+}
+
+#icke__header h5 span {
+    color: __text__;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.15em;
+}
+
+#icke__header .branding {
+    background: __background__ url(images/logos/icke_logo.png) center center no-repeat;
+    width: 180px;
+    height: 125px;
+    text-indent: -9999px;
+    float: right;
+    display: block;
+}
+
+/* =WRAPPER
+   ----------------------------------------------------*/
+
+#icke__wrapper {
+    background: transparent url(images/layout/wrap_shadow_x_top.png) top left repeat-x;
+}
+
+/* =QUICKNAV
+   ----------------------------------------------------*/
+
+#icke__quicknav {
+    float: left;
+    margin: 2em 0;
+    left: 0;
+    width: 10em;
+    position: absolute;
+}
+
+/* first-level navigation */
+#icke__quicknav li {
+    margin: 0 auto;
+    padding: 5px;
+    position: relative;
+    width: 50px;
+}
+
+#icke__quicknav li.separator {
+    border-top: 1px solid __nav_seperator__;
+    margin-top: 0.5em;
+    padding-top: 0.5em;
+}
+
+/* =PAGE
+   ----------------------------------------------------*/
+
+#icke__wrapper .wrap {
+    background: transparent url(images/layout/wrap_shadow_y_left.png) top left repeat-y;
+    margin: 0 0 0 9.7em;
+    padding: 0 0 0 14px;
+}
+
+#icke__page {
+    background: transparent url(images/layout/wrap_shadow_y_right.png) top right repeat-y;
+    margin: 0 18.6em 0 0;
+    padding: 0 1.4em 0 0;
+    /* Sidebar falls into content on page preview in IE sometimes without this */
+    position: relative;
+}
+
+/* drophead */
+#icke__page #icke__drophead {
+    background: __link__ url(images/layout/wrap_shadow_x_top.png) top left repeat-x;
+    color: __background__;
+    overflow: hidden;
+    padding: 0.5em 2.5em 0.5em 2em;
+}
+
+/* document-meta */
+#icke__page .content p.meta {
+    line-height: 1.2em;
+    margin: 0;
+}
+
+#icke__page p.meta .lastmod {
+    font-size: 0.9em;
+    color: __mediumgray__;
+}
+
+#icke__page p.meta .author {
+    color: __meta_text__;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+
+#icke__page p.meta .author:hover {
+    border-bottom: 1px dotted __meta_text__;
+}
+
+#icke__page p.meta .subscribe {
+    position: absolute;
+    right: 40px;
+}
+
+#icke__page p.meta #plugin__starred {
+    position: absolute;
+    right: 60px;
+}
+
+/* =FOOTER
+   ----------------------------------------------------*/
+
+#icke__footer {
+    color: __content_bg__;
+}
+
+#icke__footer .page_toolbar {
+    background: __content_bg__;
+    border-top: 1px solid __border_alt__;
+    height: 45px;
+    padding: 0.25em 2.5em 0.25em 2em;
+    position: relative;
+}
+
+#icke__footer .footer_toolbar {
+	background: __border_alt__ url(images/layout/footer_gradient.jpg) top left repeat-x;
+	height: 17px;
+	padding: 6px 2.5em 0 2em;
+}
+
+#icke__footer .footer_toolbar p {
+    margin: 0 0 0.5em 0;
+    float: left;
+}
+
+#icke__footer .footer_toolbar a {
+    color: __lighter_gray__;
+    margin: 0 0.25em;
+    text-decoration: none;
+}
+
+#icke__footer .footer_toolbar a:hover {
+    border-bottom: 1px dotted __content_bg__;
+}
+
+#icke__footer .footer_toolbar .copy {
+    text-align: right;
+    float: none;
+}
+
+/* =SIDEBAR
+   ----------------------------------------------------*/
+
+#icke__sidebar {
+    float: right;
+    padding: 0 1em 0 0;
+    width: 190px;
+}
+
+/* default sideclip */
+#icke__sidebar .sideclip {
+    -moz-border-radius-topright: 10px;
+    -opera-border-top-right-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    border-top-right-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -opera-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: __content_bg__ url(images/layout/wrap_shadow_y_right.png) top left repeat-y;
+    margin: 2em 0;
+    padding: 1em;
+}
+
+#icke__sidebar h2,
+#icke__sidebar h3 {
+    border-bottom: 1px solid __mediumgray__;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 0 0 0.75em;
+}
+
+#icke__sidebar h3 {
+    font-size: 1.2em;
+    margin-top: 1em;
+}
+
+#icke__sidebar table {
+    font-size: 1.2em;
+    line-height: 1.4em;
+}
+
+#icke__sidebar table th {
+    background-color: __table_head__;
+    font-weight: bold;
+    text-align: left;
+    padding: 0.5em 0;
+}
+
+#icke__sidebar table td {
+    padding: 0 0.5em 0 0;
+}
+
+/* logon */
+#icke__sidebar .logon {
+    background: __background__ url(images/layout/wrap_shadow_x_top.png) top left repeat-x;
+    -moz-border-radius-bottomleft: 10px;
+    -opera-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -opera-border-bottom-left-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin: 0 0 0 1em;
+    padding: 1em 1em 0.5em 1em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#icke__sidebar .logon .profile {
+    color: __mediumgray__;
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 1.3em;
+    text-decoration: none;
+}
+
+#icke__sidebar .logon .logout {
+    background: transparent url(images/icons/logout.png) top left no-repeat;
+    display: block;
+    height: 18px;
+    text-indent: -9999px;
+    width: 18px;
+}
+
+#icke__sidebar .logon .login {
+    background: transparent url(images/icons/login.png) center left no-repeat;
+    font-size: 200%;
+    padding-left: 25px;
+    color: __mediumgray__;
+}
+
+#icke__sidebar .logon .icke__noopentasks,
+#icke__sidebar .logon .icke__opentasks,
+#icke__sidebar .logon .icke__opentask {
+    clear: both;
+    padding-top: 0.5em;
+    font-size: 1.2em;
+    display: block;
+    text-align: center;
+    flex-basis: 100%;
+}
+
+#icke__sidebar .logon .icke__opentasks,
+#icke__sidebar .logon .icke__opentasks:hover,
+#icke__sidebar .logon .icke__opentask,
+#icke__sidebar .logon .icke__opentask:hover {
+    color: red;
+    font-weight: bold;
+}
+
+/* search */
+#icke__sidebar .search {
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -opera-border-radius: 10px;
+    border-radius: 10px;
+    background-color: __background__;
+    margin: 2em 0 1em 1em;
+    padding: 0.5em 0.5em 0;
+    /* Fix z-index of #fancysearch__ns_custom ul in IE 7 */
+    z-index: 21;
+    /* Fix too high search section in IE 7 */
+    position: relative;
+}
+#icke__sidebar .search #fancysearch__ns_custom {
+    background: transparent url(images/icons/search_drop.png) right center no-repeat;
+    float: left;
+    height: 25px;
+    position: relative;
+    width: 47px;
+}
+
+#icke__sidebar .search #fancysearch__ns_custom.closed {
+    overflow-y: hidden;
+    overflow-x: visible;
+    cursor: pointer;
+}
+
+#icke__sidebar .search #fancysearch__ns_custom ul {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 10px;
+    -opera-border-radius: 10px;
+    border-radius: 10px;
+    background: __content_bg__;
+    border: 1px solid __mediumgray__;
+    left: 0px;
+    padding: 0 1px;
+    position: absolute;
+    top: 0px;
+    width: 28px;
+    z-index: 20;
+    cursor: pointer;
+}
+
+#icke__sidebar .search #fancysearch__ns_custom.closed ul {
+    background-color: transparent;
+    border: 0;
+}
+
+#icke__sidebar .search #fancysearch__ns_custom ul li {
+    height: 30px;
+    overflow: hidden;
+}
+
+#icke__sidebar .search .query {
+    border: 1px solid __text_other__;
+    float: left;
+    margin: 0.25em 0.25em 0 0.5em;
+    padding: 0 2px;
+    width: 52%;
+}
+
+#icke__sidebar .search .submit {
+    background: transparent url(images/icons/btn_search.png) center center no-repeat;
+    border: 0;
+    height: 25px;
+    margin: 0 0 0.25em;
+    padding: 0;
+    text-indent: -9999px;
+    width: 10%;
+    cursor: pointer;
+
+}
+    /** ie6,7 text indent fix**/
+* html #icke__sidebar .search .submit {
+    line-height: 0px;
+}
+
+*:first-child+html #icke__sidebar .search .submit {
+    line-height: 0px;
+}
+
+/* table of contents */
+#icke__sidebar .table_of_contents {
+    -moz-border-radius-topright: 10px;
+    -opera-border-top-right-radius: 10px;
+    -opera-border-bottom-right-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: __content_bg__ none;
+    margin: 2em 0 3em;
+    z-index: 1; /* Above content, but below quicksearch */
+    position: relative;
+}
+
+#dw__toc h3.toggle {
+    display: none;
+}
+
+#icke__sidebar .toc li li {
+    display: block;
+}
+
+#icke__sidebar .toc li li li {
+    margin-left: 1em;
+}
+
+#icke__sidebar .toc li.level1 > div.li {
+    border-bottom: 1px solid __mediumgray__;
+    font-weight: bold;
+    padding-bottom: 0em;
+    margin-bottom: 0.8em;
+}
+
+#icke__sidebar .sideclip h1,
+#icke__sidebar .sideclip h3,
+#icke__sidebar .table_of_contents h2,
+#icke__sidebar .table_of_contents h3 {
+    border-bottom: 1px solid __mediumgray__;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 0.8em 0 0.55em;
+}
+
+#toc__toggle {
+    display: none;
+}
+
+/* table of contents - toc */
+
+#icke__sidebar .sideclip  div.li {
+    padding-bottom: 0.8em;
+    display: block;
+}
+
+#icke__sidebar .sideclip ul li a,
+#icke__sidebar .table_of_contents ul.toc li a {
+    color: __mediumgray__;
+    font-size: 1.3em;
+    line-height: 1em;
+}
+
+#icke__sidebar .sideclip ul li a:hover,
+#icke__sidebar .table_of_contents ul.toc li a:hover {
+    color: __toc_hover__;
+}
+
+#icke__sidebar .table_of_contents ul.toc li .edit {
+    background: transparent url(images/icons/edit.png) top left no-repeat;
+    display: none;
+    height: 14px;
+    text-indent: -9999px;
+    width: 14px;
+}
+
+#icke__sidebar .table_of_contents ul.toc li:hover .edit {
+    display: block;
+    float: right;
+}
+
+#icke__sidebar .sideclip p .wikilink1 {
+    line-height: 1.4em;
+    font-size: 1.2em;
+}
+
+#icke__page .content a.wikilink2 {
+    color: __wiki_lnk__;
+}
+
+#icke__page .content a.wikilink2:visited {
+    color: __wiki_lnk__;
+}
+
+#icke__page .content a.urlextern {
+    padding-right: 17px;
+    background: transparent url(images/icons/extlink.png) center right no-repeat;
+}
+#icke__page .content a.urlextern:visited {
+    padding-right: 17px;
+    background: transparent url(images/icons/extlink_visited.png) center right no-repeat;
+}
+
+div.insitu-footnote {
+    -moz-border-radius: 5px;
+    -opera-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color:__background_other__;
+    border:1px solid __border__;
+    line-height:1.2em;
+    max-width:40%;
+    padding:6px;
+    text-align:left;
+    font-size: 1.2em;
+    z-index: 60;
+}
+
+/* table of contents - tags */
+#icke__sidebar .table_of_contents ul.tags {
+    line-height: 1.6em;
+}
+
+#icke__sidebar .table_of_contents ul.tags li {
+    display: inline;
+    margin: 0 0.5em 0 0;
+}
+
+#icke__sidebar .table_of_contents ul.tags .tag_3 {
+    font-size: 1.5em;
+}
+#icke__sidebar .table_of_contents ul.tags .tag_2 {
+    font-size: 1.2em;
+}
+#icke__sidebar .table_of_contents ul.tags .tag_1 {
+    font-size: 1.0em;
+}
+
+div.success, div.error, div.info, div.notify {
+        line-height: 22px;
+        background-position: 7px center;
+        font-family: verdana, sans-serif;
+        border: none;
+        padding: 3px 3px 3px 30px;
+        font-size: 12px;
+        border: none;
+}
+
+div.clearer {
+        clear: left;
+}
+
+#icke__page #page__revisions span.user {
+        font-style: italic;
+}
+
+#icke__page del {
+        text-decoration: line-through;
+}
+
+div.pagenav-prev {
+    float: left;
+}
+div.pagenav-next {
+    float: right;
+}
+
+/* disabled sidebar */
+div.act_media #icke__sidebar {
+    display: none;
+}
+div.act_media #icke__page {
+    margin: 0;
+}
+
+#icke__page .search_results {
+    font-size: 130%;
+}

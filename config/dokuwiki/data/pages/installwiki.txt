@@ -1,0 +1,30 @@
+====== INSTALACION DE DOKUWIKI ======
+
+Para la instalación de la página actual de Wiki son necesarios dos pasos:
+
+===== Copia de las carpetas y archivos existentes  =====
+Creamos la carpeta inicial:
+<code bash> mkdir DOKUWIKI </code>
+y copiamos dentro todo lo que tenemos actualmente:
+<code bash> cp -r /wikiactual/* /DOKUWIKI/ </code>
+===== Creación del docker =====
+Ejecutaremos el docker en segundo plano (cond //-d//)
+<code bash>
+docker run -d  \
+  --name=dokuwiki \
+  -e PUID=1000 \
+  -e PGID=1000 \
+  -e TZ=Europe/London \
+  -e APP_URL=/dokuwiki `#optional` \
+  -p 6003:80 \
+  -v /home/DOKUWIKI/config:/config \
+  --restart unless-stopped \
+  linuxserver/dokuwiki
+</code>
+Es importante cambiar los siguientes parámetros:
+  * --name=[nuevo_nombre]
+  * -p [nuevo_puerto]:80
+  * -v [nueva_ruta]/config:/config - aquí siguiendo el ejemplo se pondría /home/DOKUWIKI
+
+
+

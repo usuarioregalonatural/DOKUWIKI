@@ -1,0 +1,175 @@
+/* Wiki-Syntax Styles
+   Author: Florian Purchess
+   ----------------------------------------------------*/
+
+
+/* =HEADLINES
+   ----------------------------------------------------*/
+
+h1, h2, h3, h4, h5 {
+    font-style: normal;
+    font-weight: normal;
+    vertical-align: baseline;
+    text-align: left;
+    text-decoration: none;
+    text-transform: none;
+}
+
+#icke__page .content h1 {
+    font-size: 2em;
+}
+#icke__page .content h2 {
+    font-size: 1.5em;
+}
+#icke__page .content h3 {
+    font-size: 1.45em;
+}
+#icke__page .content h4 {
+    font-size: 1.3em;
+}
+#icke__page .content h5 {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+#icke__page .content h1,
+#icke__page .content h2,
+#icke__page .content h3,
+#icke__page .content h4,
+#icke__page .content h5 {
+    clear: left;
+    font-weight: bold;
+    margin-bottom: 0.6em;
+    padding: 0.5em 0 0.2em;
+}
+
+#icke__page .content h2 {
+    border-bottom: 1px solid __dark__;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a {
+    font-size: 1em;
+    text-decoration: none;
+}
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
+    text-decoration: none;
+}
+
+#icke__page .content .section_highlight {
+    background-color: __nav_hover__;
+}
+
+#icke__page .content .page > .section_highlight {
+    margin-left: -30px;
+    margin-right: -70px;
+    padding-left: 30px;
+    padding-right: 70px;
+}
+
+#icke__page .content .page > h1.section_highlight,
+#icke__page .content .page > h2.section_highlight,
+#icke__page .content .page > h3.section_highlight,
+#icke__page .content .page > h4.section_highlight,
+#icke__page .content .page > h5.section_highlight,
+#icke__page .content .page > h6.section_highlight {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0.5em;
+    padding-bottom: 0.8em;
+}
+
+#icke__page .content .page > h2.section_highlight {
+    border-bottom: 1px solid __nav_hover__;
+}
+
+/* =PARAGRAPHS
+   ----------------------------------------------------*/
+
+/* reset */
+p, b, strong, i, em, strong, b, code, samp, dnf, abbr, acronym, ins, del, big, small, sup, sub {
+    /*line-height: 1em; /* fixes a line-height bug in firefox */
+    font-size: 1em;
+    font-weight: normal;
+    font-style: normal;
+    vertical-align: baseline;
+    text-align: left;
+    text-decoration: none;
+    text-transform: none;
+}
+
+#icke__page .content div.level1,
+#icke__page .content div.level2,
+#icke__page .content div.level3,
+#icke__page .content div.level4,
+#icke__page .content div.level5 {
+    padding-bottom: 1em; /* Leave space for the edit button since it floats into the content */
+}
+
+/* =TEXTLOGIC
+   ----------------------------------------------------*/
+
+b, strong {font-weight: bold;}
+i, em {font-style: italic;}
+code, samp {font-size: 0.9em; }
+dfn {font-size: 1.125em; font-style: italic;}
+abbr {font-size: 0.9em;}
+acronym {border-bottom:1px dotted;}
+ins {text-decoration: underline;}
+del {text-decoration: line-through;}
+big {font-size: 1.2em;}
+small {font-size: 0.7em;}
+sup, sub {font-size: 0.8em;}
+sup {vertical-align: super;}
+sub {vertical-align: sub;}
+
+/* =LISTS
+   ----------------------------------------------------*/
+
+.content ol {list-style-type: decimal;}
+
+.content ul,
+.content ol {
+    line-height: 1.5em;
+    font-size: 1.2em;
+    list-style-image: none;
+    color: __text_alt__;
+
+    margin: 0 0 1.5em 1.5em;
+    padding: 0;
+}
+
+.content li ul,
+.content li ol {
+    font-size: 1em;
+    margin: 0 0 0 1.5em;
+    padding: 0;
+}
+
+div.dokuwiki .li {
+    color: __text__;
+}
+
+
+.content ul{
+    list-style-type: square;
+}
+
+.content ol {
+    list-style-type: decimal;
+}
+
+.content ol ol {
+    list-style-type: upper-roman;
+}
+
+
+dl.file dt a.mediafile {
+        margin-left:2em;
+        background-color:__background__;
+        border-left:1px dashed __border__;
+        border-right:1px dashed __border__;
+        border-top:1px dashed __border__;
+        padding: 3px 5px 3px 23px;
+        background-position:3px 1px;
+        line-height: 14px;
+}

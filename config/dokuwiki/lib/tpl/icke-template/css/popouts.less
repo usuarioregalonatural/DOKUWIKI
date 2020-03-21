@@ -1,0 +1,159 @@
+/* second-level navigation */
+
+#icke__quicknav {
+    /* Fix for IE 6&7; otherwise the popouts are below the content;
+       this brings overlays under the sidebar, though */
+    *z-index: 20;
+}
+
+#icke__quicknav a.qnav_item {
+    background: transparent top left no-repeat;
+    display: block;
+    height: 60px;
+    text-indent: -9999px;
+    width: 60px;
+}
+
+#icke__quicknav li:hover > div.sec_level,
+#icke__quicknav li.hover > div.sec_level {
+    display: block;
+    z-index: 200;
+}
+
+#icke__quicknav div.sec_level {
+    z-index: 50;
+    position: absolute;
+    left: 50px;
+    top: 0;
+
+    display: none;
+
+    margin-bottom: 15px;
+    max-width: 580px;
+
+    background: transparent url(images/layout/bubble_arrow.png) no-repeat top left;
+}
+
+#icke__quicknav div.popup_content {
+    z-index: 51;
+
+    margin-left: 19px;
+    margin-right: -13px;
+    box-shadow: 4px 4px 4px #BBBBBB;
+    border: @ini_border solid 1px;
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px;
+
+    font-size: 12px;
+
+    background-color: white;
+}
+
+#icke__quicknav div.sec_level ul {
+    padding-top: 5px;
+}
+
+#icke__quicknav div.sec_level div.sec_level {
+    top: -20px;
+
+    box-shadow: 4px 4px 4px #BBBBBB;
+    border: @ini_border solid 1px;
+    border-radius: 5px;
+    padding: 5px;
+
+    background: @ini_background;
+}
+
+#icke__quicknav div.sec_level div.sec_level ul {
+    margin-bottom: 5px;
+}
+
+#icke__quicknav div.sec_level div.sec_level li {
+    margin-right: 0;
+}
+
+#icke__quicknav div.sec_level li.navNode {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJBAMAAAASvxsjAAAAG1BMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACUUeIgAAAACHRSTlMAARQvb5XB8UqAGIYAAAAnSURBVAhbY2AwZACBVgEQ2REIJsGcjg4HENmuACKLQOJgJkMSEAMAv8MHP9yvyAoAAAAASUVORK5CYII=') no-repeat right center;
+}
+
+#icke__quicknav div.sec_level h1,
+#icke__quicknav div.sec_level h2,
+#icke__quicknav div.sec_level h3,
+#icke__quicknav div.sec_level h4,
+#icke__quicknav div.sec_level h5 {
+    font-weight: bold;
+    padding-top: 8px;
+    font-size: 14px;
+    padding-left: 12px;
+    margin-right: 12px;
+}
+
+#icke__quicknav div.sec_level h1 {
+    margin-top: 6px;
+    padding-bottom: 5px;
+}
+
+#icke__quicknav div.sec_level .empty {
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 1px;
+    font-size: 1px;
+}
+
+#icke__quicknav div.sec_level ul.inline {
+    margin-top: 0;
+}
+
+#icke__quicknav div.sec_level ul li,
+#icke__quicknav div.sec_level p {
+    padding: 5px 15px 5px 12px;
+    margin-left: 1px;
+    margin-right: 1px;
+    white-space: nowrap;
+    display: block;
+    width: auto;
+}
+
+#icke__quicknav div.popup_content a {
+    text-decoration: none;
+}
+
+#icke__quicknav div.popup_content div a:hover {
+    text-decoration: underline;
+}
+
+#icke__quicknav div.popup_content div ul li:hover,
+#icke__quicknav div.popup_content div p:hover {
+    background-color: __nav_hover__;
+}
+
+*html #icke__quicknav div.sec_level {
+        background-image: none;
+        width: 200px;
+}
+*html #icke__quicknav div.sec_level div.popup_content {
+        background-image: none;
+        background-color: white;
+}
+
+* html #icke__quicknav div.sec_level h1 {
+        margin-top: -5px;
+}
+*:first-child+html #icke__quicknav div.sec_level {
+        width: 200px;
+}
+
+*:first-child+html #icke__quicknav div.sec_level h1 {
+        margin-top: -5px;
+}
+
+* html #icke__quicknav div.sec_level ul li a {
+        white-space: normal;
+        width: 160px;
+}
+
+*:first-child+html #icke__quicknav div.sec_level ul li a {
+        white-space: normal;
+        width: 167px;
+}

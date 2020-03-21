@@ -1,0 +1,169 @@
+/* ---------------- forms ------------------------ */
+
+div.dokuwiki form {
+  border: none;
+  display: inline;
+}
+
+div.dokuwiki label.block {
+  display: block;
+  text-align: left;
+  font-weight: bold;
+}
+
+div.dokuwiki label.simple span,
+div.dokuwiki label.block span {
+       width: 120px;
+        display: inline-block;
+}
+
+div.dokuwiki label.simple {
+  display: block;
+  text-align: left;
+  font-weight: normal;
+        margin-bottom: 5px;
+}
+
+div.dokuwiki label.block input.edit {
+  width: 50%;
+}
+
+div.dokuwiki fieldset {
+  width: 300px;
+  text-align: center;
+  border: 1px solid __border__;
+  padding: 0.5em;
+  margin: auto;
+}
+
+div.dokuwiki textarea.edit {
+  font-family: monospace;
+  font-size: 14px;
+  color: __text__;
+  background-color: __background__;
+  border: 1px solid __border__;
+  padding: 0.3em 0 0 0.3em;
+  width: 100%;
+}
+
+/* nice alphatransparency background except for IE <7 */
+html>body div.dokuwiki textarea.edit {
+  background:  __background__ url(images/inputshadow.png) repeat-x top;
+}
+
+div.dokuwiki input.edit,
+div.dokuwiki select.edit {
+  font-size: 100%;
+  border: 1px solid __border__;
+  color: __text__;
+  background-color: __background__;
+  vertical-align: middle;
+  margin: 1px;
+  padding: 0.20em 0.3em;
+  display: inline;
+}
+
+/* nice alphatransparency background except for IE <7 */
+html>body div.dokuwiki input.edit,
+html>body div.dokuwiki select.edit {
+  background:  __background__ url(images/inputshadow.png) repeat-x top;
+}
+
+div.dokuwiki select.edit {
+  padding: 0.1em 0;
+}
+
+div.dokuwiki input.missing {
+  font-size: 100%;
+  border: 1px solid __border__;
+  color: __text__;
+  background-color: __missing_input__;
+  vertical-align: middle;
+  margin: 1px;
+  padding: 0.20em 0.3em;
+  display: inline;
+}
+
+/* disabled style - not understood by IE */
+div.dokuwiki textarea.edit[disabled],
+div.dokuwiki textarea.edit[readonly],
+div.dokuwiki input.edit[disabled],
+div.dokuwiki input.edit[readonly],
+div.dokuwiki button[disabled],
+div.dokuwiki select.edit[disabled] {
+  background-color: __background_neu__!important;
+  color: __text_neu__!important;
+}
+
+/* --------- buttons ------------------- */
+
+div.dokuwiki button {
+  border: 1px solid __border__;
+  color: __text__;
+  background-color: __background__;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 100%;
+  cursor: pointer;
+  margin: 1px;
+  padding: 0.125em 0.4em;
+}
+
+/* nice alphatransparency background except for IE <7 */
+html>body div.dokuwiki button {
+  background:  __background__ url(images/buttonshadow.png) repeat-x bottom;
+}
+
+* html div.dokuwiki button {
+  height: 1.8em;
+}
+
+/* --------- search ------------------- */
+
+#dw__search input.edit {
+    width: 8em;
+}
+
+/***** submit button *****/
+
+html > body div.dokuwiki button {
+    background: __button_background__ url(images/buttonbshadow.png) repeat-x scroll center bottom;
+    color: __lighter_gray__;
+    margin-right: 4%;
+    font-weight: bold;
+    padding: 2px 8px;
+}
+
+div.dokuwiki fieldset button {
+    float: left;
+}
+
+div.dokuwiki button[disabled] {
+    background: __button_background__ url(images/buttonshadow.png) repeat-x scroll center bottom;
+    cursor: not-allowed;
+}
+
+#icke__page #subscribe__form {
+        float: left;
+        margin: 5px 5px 5px 0;
+}
+
+#icke__page #subscribe__form fieldset {
+        margin-bottom: 8px;
+        width: auto;
+        text-align: left;
+        font-size: 1.2em;
+        border: none;
+} 
+
+#icke__page #subscribe__form fieldset legend {
+        font-size:15px;
+        font-weight:bold;
+        padding-bottom:5px;
+        padding-top:8px;
+        text-align:left;
+}
+
+#icke__page #subscribe__form fieldset label {
+        display: block;
+} 
