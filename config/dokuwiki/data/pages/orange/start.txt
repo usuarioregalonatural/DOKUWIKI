@@ -1,0 +1,34 @@
+====== Información CDR-Datos ======
+
+
+
+[[orange:start#Relleno de campo NUM_CDRS_QTY|NUM_CDRS_QTY]]
+
+[[orange:start#Relleno de campo Cell_Id|cell_id]]
+
+
+
+====== Relleno de campo Cell_Id ======
+
+
+
+Se requiere rellenar el campo **cell_id** con determinada lógica únicamente para los **tipo de cdr 18**.
+Estos tipos de cdr no rellenan completa la celda, sólo ponen una parte final.
+
+La forma de informarlo será:   
+  * CELL_ID= "21403" + LOCATION_AREA_ID + CELL_ID
+  * Si location_area_id o cell_id tienen menos de 5 dígitos, se rellenarán a la izquierda a 0 hasta completar los 5 dígitos.
+
+__Ejemplo:__
+
+Datos origen:
+^  Datos de Origen  ^  ^  ^ Dato Final ^
+^ tipo CDR ^ cell_id ^ location area ^ Nuevo CELL_ID ^
+|18     | 30183    | 5120         | 214030512030183 |
+|18     | 2147    | 5112         | 214030511202147 |
+
+Para los tipo de CDR 19 se dejará como está.
+
+
+
+
