@@ -1,0 +1,40 @@
+====== Tips Genericos del SO de Linux ======
+
+==== Crear un enlace simbólico ====
+<code bash>ln -s /home/www/carpeta nombre_enlace </code>
+
+==== Busquedas con find ====
+<code bash>find .-name *|xargs grep -i "incluya estos detalles" 2>/dev/null</code>
+
+==== Añadir usuario ====
+<code bash>root@luigiz:/tmp# adduser usrweb</code>
+<code bash>
+Adding user `usrweb' ...
+Adding new group `usrweb' (1018) ...
+Adding new user `usrweb' (1009) with group `usrweb' ...
+Creating home directory `/home/usrweb' ...
+Copying files from `/etc/skel' ...
+Enter new UNIX password:
+Retype new UNIX password:
+passwd: password updated successfully
+Changing the user information for usrweb
+Enter the new value, or press ENTER for the default
+        Full Name []: Web User
+        Room Number []:
+        Work Phone []:
+        Home Phone []:
+        Other []:
+Is the information correct? [Y/n] Y
+</code>
+==== Añadir usuario a un grupo ====
+<code bash>root@luigiz:/tmp# adduser usrweb www-data</code>
+<code bash>
+Adding user `usrweb' to group `www-data' ...
+Adding user usrweb to group www-data
+Done.
+</code>
+==== Listar los últimos ficheros modificados hoy ====
+<code bash>find ./ -type f -mtime -1 -exec ls -gGh --full-time '{}' \; | cut -d ' ' -f 4,5,7</code>
+
+
+

@@ -1,0 +1,3 @@
+====== Linux ======
+
+[[linux:tips_genericos|Tips Genericos del SO]]
